@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vprodb
@@ -36,5 +36,5 @@ spec:
     volumes:
       - name: vpro-db-data
         awsElasticBlockstore:
-          volumeId: vol-04c571a2460fc349a
+          volumeID: vol-04c571a2460fc349a
           fsType: ext4
